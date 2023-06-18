@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  height: 88vh;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.3)), url('../image/carousel/image1.jpg');
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+.banner-about {
+  height: 50vh;
+  background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.3)), url('../image/carousel/image1.jpg');
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+.hg-container {
+  height: 55vh;
+  background: linear-gradient(180deg, #f1eeed, white);
+}
+
+.highlighted-category {
+  height: 200px;
+}
+
+.kategori-dress {
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../image/carousel/dress.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.kategori-kerudung {
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../image/carousel/kerudung.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.kategori-kemeja-pria {
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../image/carousel/kemeja_pria.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Section tentang kami */
+.section-us {
+  background-color: #ebe7dd;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.hover-item:hover {
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,.4);
+  cursor: pointer;
+}
+
+/* list category (halaman produk) */
+.list-category {
+  text-decoration: none;
+}
+
+/* footer */
+.footer-nishop {
+  background-color: #596e79;
+}
+
+.footer-nishop a {
+  color: aliceblue;
+}
+
+.copyright-footer {
+  background-color: rgb(62, 62, 62);
+}

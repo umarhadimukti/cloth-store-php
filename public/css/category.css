@@ -1,0 +1,53 @@
+.container {
+  /* border: 2px solid black; */
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+.area-breadcrumb {
+  position: relative;
+  top: 30px;
+  left: 60px;
+}
+
+.input-kategori-baru {
+  /* border: 2px solid black; */
+  position: relative;
+  top: -660px;
+}
+
+.alert-kategori-baru {
+  /* border: 2px solid black; */
+  position: relative;
+  top: -650px;
+}
+
+.table-responsive {
+  /* border: 2px solid black; */
+  position: relative;
+  top: 0px;
+  text-align: center;
+}
+
+.no-decoration {
+  text-decoration: none;
+  color: black;
+}
+
+.no-decoration:hover {
+  color: rgb(110, 110, 110);
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: -320px;
+  left: 0;
+  right: 0;
+  background: #596e79;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+}

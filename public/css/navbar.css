@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #f0ece2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+
+.navbar .brand img {
+  border-radius: 50%;
+}
+
+.navbar ul {
+  /* border: 2px solid black; */
+  display: flex;
+  list-style: none;
+  width: 40%;
+  height: 40px;
+  margin: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: rgb(72, 23, 72);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navbar ul li a.logout {
+  color: rgb(241, 152, 127);
+}
+
+.navbar ul li a:hover {
+  color: rgb(182, 147, 92);
+}
+
+.navbar ul li a.logout:hover {
+  color: rgb(229, 52, 3);
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  opacity: 0;
+  top: -3px;
+  left: -22px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3.8px;
+  background-color: rgb(72, 23, 72);
+  border-radius: 5px;
+  transition: all 0.6s;
+}
+
+.menu-toggle span:hover {
+  color: rgb(228, 224, 228);
+}
+
+/* Hamburger menu animation */
+/*! mengambil elemen span pertama */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+/*! mengambil elemen span ketiga */
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+/*! ketika tombol checkbox di klik, cari siblings kedua */
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: rgb(175, 0, 0);
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+/*! ketika tombol checkbox di klik, cari siblings ketiga */
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/*! ketika tombol checkbox di klik, cari siblings keempat*/
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: rgb(175, 0, 0);
+  transform: rotate(-45deg);
+}
+
+/* Responsive Breakpoint */
+/* Ukuran tablet */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+      width: 50%;
+  }
+}
+
+/* Ukuran mobile */
+@media screen and (max-width: 576px) {
+  .navbar .menu-toggle {
+      display: flex;
+  }
+
+  .navbar .nav-list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      background-color: #f0ece2;
+      /* background-color: blueviolet; */
+      align-items: center;
+      height: 100vh;
+      align-items: center;
+      justify-content: space-evenly;
+      /* z-index: -1; */
+      transform: translateX(100%);
+      transition: all 1s;
+      opacity: 0;
+  }
+
+  .navbar ul.slide {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
