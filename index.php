@@ -27,7 +27,7 @@ $queryGetProduk = mysqli_query($conn, "SELECT * FROM barang LIMIT 8");
   <div class="banner container-fluid d-flex align-items-center text-light border">
     <div class="container text-center ">
       <h1>Selamat Datang di toko kami</h1>
-      <h5>Mau cari pakaian apa?</h5>
+      <h4>Mau cari pakaian apa?</h4>
       <div class="col-md-4 offset-4">
         <form action="./product.php" method="GET">
           <div class="input-group my-4">
