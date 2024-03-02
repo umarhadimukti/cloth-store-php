@@ -1,2 +1,2 @@
 # php-project
-This repository contains php project files
+aplikasi e-commerce menggunakan php native
